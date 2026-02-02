@@ -7,7 +7,7 @@ export type Account = {
   why: string;
   signals: string[];
   recommendedNextStep: string;
-};
+};openUrl: sring;   
 
 export const sampleAccounts: Account[] = [
   {
@@ -21,6 +21,7 @@ export const sampleAccounts: Account[] = [
       "Breach exposure signal",
     ],
     recommendedNextStep:
+    openUrl: "https://example.com"  
       "Reset the password, enable MFA if available, or close the account if unused.",
   },
   {
@@ -33,6 +34,7 @@ export const sampleAccounts: Account[] = [
       "No breach correlation found",
     ],
     recommendedNextStep:
+     openUrl: "https://example.com"
       "No immediate action needed. Keep an eye on changes.",
   },
 ];
