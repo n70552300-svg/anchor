@@ -7,7 +7,7 @@ export type Account = {
   why: string;
   signals: string[];
   recommendedNextStep: string;
-};openUrl: sring;   
+};openUrl: string;   
 
 export const sampleAccounts: Account[] = [
   {
