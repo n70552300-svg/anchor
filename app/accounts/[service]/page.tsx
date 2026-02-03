@@ -16,7 +16,11 @@ export default function AccountDetailPage({ params }: Props) {
   return (
     <main style={{ padding: 24 }}>
       <h1>{account.name}</h1>
-
+<p>
+  <a href={account.openUrl} target="_blank" rel="noreferrer">
+    Open website →
+  </a>
+</p>
       <p>{account.why}</p>
 
       <h2>Signals</h2>
