@@ -1,5 +1,5 @@
 import { sampleAccounts } from "../../_data/sampleAccounts";
-
+import AccountStatusActions from "../.._components/AccountStausActions";
 type Props = {
   params: { service: string };
 };
@@ -16,6 +16,7 @@ export default function AccountDetailPage({ params }: Props) {
   return (
     <main style={{ padding: 24 }}>
       <h1>{account.name}</h1>
+      <AccountSatusActions slug={account.slug} />
 <p>
   <a href={account.openUrl} target="_blank" rel="noreferrer">
     Open website →
