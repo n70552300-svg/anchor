@@ -8,7 +8,11 @@ export type Account = {
   signals: string[];
   recommendedNextStep: string;
 };openUrl: string;   
-
+securityLinks?: {
+  resetPassword?: string;
+  securitySettings?: string;
+  closeAccount?: string;
+};
 export const sampleAccounts: Account[] = [
   {
     slug: "example-service",
