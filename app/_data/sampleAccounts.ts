@@ -25,7 +25,12 @@ export const sampleAccounts: Account[] = [
       "Breach exposure signal",
     ],
     recommendedNextStep:
-    openUrl: "https://example.com"  
+    openUrl: "https://example.com" 
+securityLinks: {
+  resetPassword: "https://example.com/reset",
+  securitySettings: "https://example.com/security",
+  closeAccount: "https://example.com/close",
+},
       "Reset the password, enable MFA if available, or close the account if unused.",
   },
   {
