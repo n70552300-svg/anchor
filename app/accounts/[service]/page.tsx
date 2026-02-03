@@ -32,6 +32,44 @@ export default function AccountDetailPage({ params }: Props) {
       </ul>
 
       <p>
+<h2>Security actions</h2>
+<ul>
+  {account.securityLinks?.resetPassword && (
+    <li>
+      <a
+        href={account.securityLinks.resetPassword}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Reset password →
+      </a>
+    </li>
+  )}
+
+  {account.securityLinks?.securitySettings && (
+    <li>
+      <a
+        href={account.securityLinks.securitySettings}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Security settings →
+      </a>
+    </li>
+  )}
+
+  {account.securityLinks?.closeAccount && (
+    <li>
+      <a
+        href={account.securityLinks.closeAccount}
+        target="_blank"
+        rel="noreferrer"
+      >
+        Close account →
+      </a>
+    </li>
+  )}
+</ul>
         <strong>Recommended next step:</strong>{" "}
         {account.recommendedNextStep}
       </p>
